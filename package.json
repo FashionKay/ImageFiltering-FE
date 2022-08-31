@@ -6,7 +6,13 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh",
+    "frontend:install": "cd reactnd-contacts-complete && npm install",
+    "backend:install": "cd reactnd-contacts-server && npm install",
+    "frontend:build": "cd reactnd-contacts-complete && npm run build",
+    "backend:build": "cd reactnd-contacts-server && npm run build",
+    "frontend:deploy": "cd reactnd-contacts-complete && npm run deploy"
   },
   "private": true,
   "dependencies": {
